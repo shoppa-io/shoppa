@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shoppa – What We Do</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* --- CSS Variables for Easy Customization --- */
+    :root {
+      --primary-color: #0e0e2c;
+      --secondary-color: #1f1f4d;
+      --accent-color: #007bff;
+      --text-color: #333;
+      --background-color: #f8f9fa;
+      --font-heading: 'Poppins', sans-serif;
+      --font-body: 'Roboto', sans-serif;
+    }
+
+    /* --- General Body Styles --- */
+    body {
+      margin: 0;
+      font-family: var(--font-body);
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.7;
+    }
+
+    /* --- Hero Header --- */
+    .hero {
+      background-image: linear-gradient(rgba(14, 14, 44, 0.7), rgba(14, 14, 44, 0.7)), url('https://images.unsplash.com/photo-1556740738-b6a63e2775d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fHNob3BwaW5nJTIwY29udmVuaWVuY2V8ZW58MHx8fHwxNjgxMzgyNTAw&ixlib=rb-4.0.3&q=80&w=1920');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      padding: 0 1rem;
+    }
+
+    .hero-content h1 {
+      font-family: var(--font-heading);
+      font-size: 3rem;
+      margin: 0 0 0.5rem 0;
+    }
+
+    .hero-content p {
+      font-size: 1.3rem;
+      opacity: 0.9;
+      font-weight: 400;
+    }
+
+    /* --- Main Content --- */
+    main {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    /* --- Introduction Section --- */
+    .intro {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 3rem auto;
+    }
+
+    .intro h2 {
+      font-family: var(--font-heading);
+      font-size: 2.5rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .intro p {
+      font-size: 1.1rem;
+    }
+
+    /* --- Features Section with Cards --- */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-content {
+      padding: 1.5rem;
+    }
+
+    .card-content h3 {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      margin: 0 0 0.5rem 0;
+      color: var(--primary-color);
+    }
+
+    .card-content p {
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    /* --- Footer --- */
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #777;
+      background-color: #e9ecef;
+      margin-top: 3rem;
+    }
+
+    /* --- Responsive Adjustments --- */
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 2.2rem;
+      }
+      .hero-content p {
+        font-size: 1.1rem;
+      }
+      .intro h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Shoppa</h1>
+      <p>Redefining convenience, one connection at a time</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>What We Do</h2>
+      <p>
+        At <strong>Shoppa</strong>, we’re changing how people access the products they need every day. We connect customers with personal shoppers—real, trusted individuals—who help them find and deliver what they’re looking for, quickly and reliably.
+      </p>
+    </section>
+
+    <section class="features">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1599422484433-5c3f3434d73b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEyfHxwZXJzb25hbCUyMHNob3BwaW5nfGVufDB8fHx8MTY4MTM4MjYyOQ&ixlib=rb-4.0.3&q=80&w=1080" alt="A person carefully selecting fresh produce in a market.">
+        <div class="card-content">
+          <h3>Personal, Human-Centered Shopping</h3>
+          <p>In a world of automated checkouts, we bring back the personal touch. Our shoppers are dedicated to finding exactly what you need with care and attention to detail.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1617347454434-7f8a404cce3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDV8fGRlbGl2ZXJ5fGVufDB8fHx8MTY4MTM4MjU4Mg&ixlib=rb-4.0.3&q=80&w=1080" alt="A smiling delivery person handing a package to a customer at their door.">
+        <div class="card-content">
+          <h3>Trust and Reliability</h3>
+          <p>Our mission is simple: to make shopping easier, faster, and more personal. We’re not just delivering goods—we’re delivering trust, convenience, and community empowerment.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1543083477-4f785aeafaa9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDR8fGNvbW11bml0eSUyMHNob3BwaW5nfGVufDB8fHx8MTY4MTM4MjY2Mw&ixlib=rb-4.0.3&q=80&w=1080" alt="A vibrant local market with people interacting and supporting local vendors.">
+        <div class="card-content">
+          <h3>Empowering Local Communities</h3>
+          <p>Shoppa is more than a platform. It’s a movement that supports local economies, creates flexible work opportunities, and helps people reclaim their time for what matters most.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Shoppa. All rights reserved.
+  </footer>
+
+</body>
+</html>
+```
